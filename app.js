@@ -286,7 +286,7 @@ const menuProducts = [
     name: "Прженица со јајца (шакшука)",
     category: "Доручек",
     price: 180,
-    image: "/optimized/menu-images/шакшука.webp"
+    image: "/optimized/menu-images/шакшука.jpg"
   },
   {
     id: "vrap",
