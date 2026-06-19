@@ -1,7 +1,7 @@
-const STORAGE_KEY = "safron-menu-cart-v1";
-const LANG_KEY = "safron-menu-lang";
-const THEME_KEY = "safron-menu-theme";
-const BRAND_LOGO_SRC = "assets/logo%20safron.png";
+const STORAGE_KEY = "saffron-menu-cart-v1";
+const LANG_KEY = "saffron-menu-lang";
+const THEME_KEY = "saffron-menu-theme";
+const BRAND_LOGO_SRC = "assets/logo%20saffron.png";
 const HERO_IMAGE_SRC = "public/optimized/banner/banner-image.webp";
 const PLACEHOLDER_IMAGE_SRC = "/optimized/menu-images/placeholder.svg";
 
@@ -54,8 +54,8 @@ const copy = {
     navOrder: "Моја нарачка",
     navInfo: "Инфо",
     search: "Пребарај производ...",
-    heroBadge: "Лето во SAFRON",
-    heroTitle: "Добредојдовте во SAFRON Pool & Bar",
+    heroBadge: "Лето во SAFFRON",
+    heroTitle: "Добредојдовте во SAFFRON Pool & Bar",
     heroText: "Уживајте во свежа храна и летни вкусови покрај базен.",
     heroButton: "Види мени",
     all: "Сите",
@@ -76,19 +76,19 @@ const copy = {
     waiterTitle: "НАРАЧКА",
     waiterHelp: "Покажете го овој екран на келнерот.",
     backMenu: "Назад кон мени",
-    infoKicker: "SAFRON Pool Bar",
+    infoKicker: "SAFFRON Pool Bar",
     infoTitle: "Инфо",
     infoSubtitle: "Практични информации за гостите на базен.",
     hoursTitle: "Работно време",
     hoursText: "Секој ден: 09:00 - 00:00",
     locationTitle: "Локација",
-    locationText: "SAFRON Pool Bar, покрај базен. Прашајте го персоналот за точна насока во комплексот.",
+    locationText: "SAFFRON Pool Bar, покрај базен. Прашајте го персоналот за точна насока во комплексот.",
     instagramTitle: "Instagram",
     instagramText: "Следете не за летни понуди и дневни специјали.",
     instagramLinkLabel: "Нашиот Instagram профил",
     locationLinkLabel: "Насоки до нас",
     wifiTitle: "Wi-Fi",
-    wifiText: "Мрежа: SAFRON Guest. Лозинка: прашајте го персоналот.",
+    wifiText: "Мрежа: SAFFRON Guest. Лозинка: прашајте го персоналот.",
     viewOrder: "Види нарачка",
     itemOne: "производ",
     itemMany: "производи",
@@ -102,8 +102,8 @@ const copy = {
     navOrder: "My Order",
     navInfo: "Info",
     search: "Search menu items...",
-    heroBadge: "Summer at SAFRON",
-    heroTitle: "Welcome to SAFRON Pool & Bar",
+    heroBadge: "Summer at SAFFRON",
+    heroTitle: "Welcome to SAFFRON Pool & Bar",
     heroText: "Enjoy fresh food and summer flavors by the pool.",
     heroButton: "View menu",
     all: "All",
@@ -124,19 +124,19 @@ const copy = {
     waiterTitle: "ORDER",
     waiterHelp: "Show this screen to the waiter.",
     backMenu: "Back to Menu",
-    infoKicker: "SAFRON Pool Bar",
+    infoKicker: "SAFFRON Pool Bar",
     infoTitle: "Info",
     infoSubtitle: "Practical information for pool guests.",
     hoursTitle: "Working Hours",
     hoursText: "Every day: 09:00 - 00:00",
     locationTitle: "Location",
-    locationText: "SAFRON Pool Bar, by the pool. Ask the staff for the exact direction inside the complex.",
+    locationText: "SAFFRON Pool Bar, by the pool. Ask the staff for the exact direction inside the complex.",
     instagramTitle: "Instagram",
     instagramText: "Follow us for summer offers and daily specials.",
     instagramLinkLabel: "Our Instagram Profile",
     locationLinkLabel: "Get Directions",
     wifiTitle: "Wi-Fi",
-    wifiText: "Network: SAFRON Guest. Password: ask the staff.",
+    wifiText: "Network: SAFFRON Guest. Password: ask the staff.",
     viewOrder: "View order",
     itemOne: "item",
     itemMany: "items",
@@ -150,8 +150,8 @@ const copy = {
     navOrder: "Моята поръчка",
     navInfo: "Инфо",
     search: "Търси продукт...",
-    heroBadge: "Лято в SAFRON",
-    heroTitle: "Добре дошли в SAFRON Pool & Bar",
+    heroBadge: "Лято в SAFFRON",
+    heroTitle: "Добре дошли в SAFFRON Pool & Bar",
     heroText: "Насладете се на свежа храна и летни вкусове край басейна.",
     heroButton: "Виж меню",
     all: "Всички",
@@ -172,19 +172,19 @@ const copy = {
     waiterTitle: "ПОРЪЧКА",
     waiterHelp: "Покажете този екран на сервитьора.",
     backMenu: "Назад към менюто",
-    infoKicker: "SAFRON Pool Bar",
+    infoKicker: "SAFFRON Pool Bar",
     infoTitle: "Инфо",
     infoSubtitle: "Практична информация за гостите на басейна.",
     hoursTitle: "Работно време",
     hoursText: "Всеки ден: 09:00 - 00:00",
     locationTitle: "Локация",
-    locationText: "SAFRON Pool Bar, до басейна. Попитайте персонала за точна посока в комплекса.",
+    locationText: "SAFFRON Pool Bar, до басейна. Попитайте персонала за точна посока в комплекса.",
     instagramTitle: "Instagram",
     instagramText: "Последвайте ни за летни предложения и дневни специалитети.",
     instagramLinkLabel: "Нашият Instagram профил",
     locationLinkLabel: "Упътване до нас",
     wifiTitle: "Wi-Fi",
-    wifiText: "Мрежа: SAFRON Guest. Парола: попитайте персонала.",
+    wifiText: "Мрежа: SAFFRON Guest. Парола: попитайте персонала.",
     viewOrder: "Виж поръчката",
     itemOne: "продукт",
     itemMany: "продукта",
@@ -857,8 +857,8 @@ function renderTopbar() {
 
   return `
     <header class="topbar">
-      <div class="brand-center" aria-label="SAFRON ${t("subtitle")}">
-        <img class="brand-logo" src="${BRAND_LOGO_SRC}" alt="SAFRON" />
+      <div class="brand-center" aria-label="SAFFRON ${t("subtitle")}">
+        <img class="brand-logo" src="${BRAND_LOGO_SRC}" alt="SAFFRON" />
         <p class="brand-subtitle">${t("subtitle")}</p>
       </div>
       <div class="header-actions">
@@ -1306,8 +1306,8 @@ function renderWaiter() {
   return `
     <main class="waiter-shell">
       <section class="waiter-card">
-        <div class="waiter-brand" aria-label="SAFRON ${t("subtitle")}">
-          <img class="waiter-brand-logo" src="${BRAND_LOGO_SRC}" alt="SAFRON" />
+        <div class="waiter-brand" aria-label="SAFFRON ${t("subtitle")}">
+          <img class="waiter-brand-logo" src="${BRAND_LOGO_SRC}" alt="SAFFRON" />
           <p class="brand-subtitle waiter-brand-subtitle">${t("subtitle")}</p>
         </div>
         <h2 class="waiter-title">${t("waiterTitle")}</h2>
