@@ -283,7 +283,7 @@ const menuProducts = [
   },
   {
     id: "przenica-so-jajca",
-    name: "Прженица со јајца",
+    name: "Прженица со јајца (шакшука)",
     category: "Доручек",
     price: 180,
     image: "/optimized/menu-images/прженица со јајца(шакшука).webp"
