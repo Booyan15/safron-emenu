@@ -308,7 +308,7 @@ const menuProducts = [
     },
     category: "Доручек",
     price: 180,
-    image: "/menu-images/шакшука.jpg"
+    image: "/menu-images/shakshuka-v2.jpg"
   },
   {
     id: "vrap",
