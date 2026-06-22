@@ -94,7 +94,9 @@ const copy = {
     itemMany: "производи",
     themeLight: "Светол режим",
     themeDark: "Темeн режим",
-    languageLabel: "Јазик"
+    languageLabel: "Јазик",
+    viewIngredients: "Види состав",
+    hideIngredients: "Сокриј состав"
   },
   en: {
     subtitle: "Pool & Bar",
@@ -142,7 +144,9 @@ const copy = {
     itemMany: "items",
     themeLight: "Light mode",
     themeDark: "Dark mode",
-    languageLabel: "Language"
+    languageLabel: "Language",
+    viewIngredients: "View ingredients",
+    hideIngredients: "Hide ingredients"
   },
   bg: {
     subtitle: "Pool & Bar",
@@ -190,7 +194,9 @@ const copy = {
     itemMany: "продукта",
     themeLight: "Светъл режим",
     themeDark: "Тъмен режим",
-    languageLabel: "Език"
+    languageLabel: "Език",
+    viewIngredients: "Виж състав",
+    hideIngredients: "Скрий състав"
   }
 };
 
@@ -238,12 +244,24 @@ const categories = [
     name: { mk: "Пици", en: "Pizza", bg: "Пици" }
   },
   {
+    id: "Коктели",
+    tone: "cocktail",
+    image: "/optimized/categories/kokteli.webp",
+    name: { mk: "Коктели", en: "Cocktails", bg: "Коктейли" }
+  },
+  {
     id: "Десерти",
     tone: "dessert",
     image: "/optimized/categories/deserti.webp",
     name: { mk: "Десерти", en: "Desserts", bg: "Десерти" }
   }
 ];
+
+const cocktailSections = {
+  alcoholic: { mk: "Алкохолни коктели", en: "Alcoholic Cocktails", bg: "Алкохолни коктейли" },
+  signature: { mk: "Сигнатурни коктели", en: "Signature Cocktails", bg: "Сигнатурни коктейли" },
+  gin: { mk: "Џин коктели", en: "Gin Cocktails", bg: "Джин коктейли" }
+};
 
 const menuProducts = [
   {
@@ -530,6 +548,228 @@ const menuProducts = [
     image: "/optimized/menu-images/пилешка пастрамајлија.webp"
   },
   {
+    id: "cocktail-classic-mojito",
+    name: "Classic Mojito",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "бел рум, свежо нане, лимета, сода",
+      en: "white rum, fresh mint, lime, soda",
+      bg: "бял ром, свежа мента, лайм, сода"
+    },
+    image: "/optimized/menu-images/classic-mojito.webp"
+  },
+  {
+    id: "cocktail-strawberry-mojito",
+    name: "Strawberry Mojito",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "бел рум, свежо нане, лимета, јагоди, сода",
+      en: "white rum, fresh mint, lime, strawberries, soda",
+      bg: "бял ром, свежа мента, лайм, ягоди, сода"
+    },
+    keywords: { mk: "јагода", en: "strawberry", bg: "ягода" },
+    image: "/optimized/menu-images/strawberry-mojito.webp"
+  },
+  {
+    id: "cocktail-watermelon-mojito",
+    name: "Watermelon Mojito",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "бел рум, свежо нане, лубеница, лимета, сода",
+      en: "white rum, fresh mint, watermelon, lime, soda",
+      bg: "бял ром, свежа мента, диня, лайм, сода"
+    },
+    image: "/optimized/menu-images/watermelon-mojito.webp"
+  },
+  {
+    id: "cocktail-sex-on-the-beach",
+    name: "Sex on the Beach",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "водка, арчерс, сок од портокал, гренадин",
+      en: "vodka, Archers, orange juice, grenadine",
+      bg: "водка, Archers, портокалов сок, гренадин"
+    },
+    image: "/optimized/menu-images/sex-on-the-beach.webp"
+  },
+  {
+    id: "cocktail-old-fashioned",
+    name: "Old Fashioned",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 200,
+    ingredients: {
+      mk: "џејмисон, ангостура битер, шеќер",
+      en: "Jameson, Angostura bitters, sugar",
+      bg: "Jameson, ангостура битер, захар"
+    },
+    image: "/optimized/menu-images/old-fashioned.webp"
+  },
+  {
+    id: "cocktail-cuba-libre",
+    name: "Cuba Libre",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "бел рум, сок од лимета, кока-кола",
+      en: "white rum, lime juice, Coca-Cola",
+      bg: "бял ром, сок от лайм, кока-кола"
+    },
+    image: "/optimized/menu-images/cuba-libre.webp"
+  },
+  {
+    id: "cocktail-blue-lagoon",
+    name: "Blue Lagoon",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "водка, трипл сек, блу куракао, спрајт",
+      en: "vodka, triple sec, blue curaçao, Sprite",
+      bg: "водка, трипъл сек, синьо кюрасо, спрайт"
+    },
+    image: "/optimized/menu-images/blue-lagoon.webp"
+  },
+  {
+    id: "cocktail-long-island-ice-tea",
+    name: "Long Island Ice Tea",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "водка, џин, текила, бел рум, трипл сек, сок од лимон, кока-кола",
+      en: "vodka, gin, tequila, white rum, triple sec, lemon juice, Coca-Cola",
+      bg: "водка, джин, текила, бял ром, трипъл сек, лимонов сок, кока-кола"
+    },
+    image: "/optimized/menu-images/long-island-ice-tea.webp"
+  },
+  {
+    id: "cocktail-mimosa",
+    name: "Mimosa",
+    category: "Коктели",
+    section: cocktailSections.alcoholic,
+    price: 180,
+    ingredients: {
+      mk: "шампањ, сок од портокал",
+      en: "champagne, orange juice",
+      bg: "шампанско, портокалов сок"
+    },
+    image: "/optimized/menu-images/mimosa.webp"
+  },
+  {
+    id: "cocktail-old-cuban",
+    name: "Old Cuban",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/old-cuban.webp"
+  },
+  {
+    id: "cocktail-painkiller",
+    name: "Painkiller",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/painkiller.webp"
+  },
+  {
+    id: "cocktail-paloma",
+    name: "Paloma",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/paloma.webp"
+  },
+  {
+    id: "cocktail-margarita",
+    name: "Margarita",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/margarita.webp"
+  },
+  {
+    id: "cocktail-mai-tai",
+    name: "Mai Tai",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/mai-tai.webp"
+  },
+  {
+    id: "cocktail-espresso-martini",
+    name: "Espresso Martini",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/espresso-martini.webp"
+  },
+  {
+    id: "cocktail-pina-colada",
+    name: "Pina Colada",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/pina-colada.webp"
+  },
+  {
+    id: "cocktail-negroni",
+    name: "Negroni",
+    category: "Коктели",
+    section: cocktailSections.signature,
+    price: 200,
+    image: "/optimized/menu-images/negroni.webp"
+  },
+  {
+    id: "cocktail-ginger-glow",
+    name: "Ginger Glow",
+    category: "Коктели",
+    section: cocktailSections.gin,
+    price: 150,
+    ingredients: {
+      mk: "џин, сируп од ѓумбир, сок од лимета, сок од ананас, тоник / спрајт / сода",
+      en: "gin, ginger syrup, lime juice, pineapple juice, tonic / Sprite / soda",
+      bg: "джин, сироп от джинджифил, сок от лайм, сок от ананас, тоник / спрайт / сода"
+    },
+    image: "/optimized/menu-images/ginger-glow.webp"
+  },
+  {
+    id: "cocktail-elder-shine",
+    name: "Elder Shine",
+    category: "Коктели",
+    section: cocktailSections.gin,
+    price: 150,
+    ingredients: {
+      mk: "џин, сируп од бозел, сок од лимета, тоник / спрајт / сода",
+      en: "gin, elderflower syrup, lime juice, tonic / Sprite / soda",
+      bg: "джин, сироп от бъз, сок от лайм, тоник / спрайт / сода"
+    },
+    image: "/optimized/menu-images/elder-shine.webp"
+  },
+  {
+    id: "cocktail-berry-breeze",
+    name: "Berry Breeze",
+    category: "Коктели",
+    section: cocktailSections.gin,
+    price: 150,
+    ingredients: {
+      mk: "џин, сируп од јагода, сок од лимета, тоник / спрајт / сода",
+      en: "gin, strawberry syrup, lime juice, tonic / Sprite / soda",
+      bg: "джин, сироп от ягода, сок от лайм, тоник / спрайт / сода"
+    },
+    keywords: { mk: "јагода", en: "strawberry", bg: "ягода" },
+    image: "/optimized/menu-images/berry-breeze.webp"
+  },
+  {
     id: "palacinka",
     name: { mk: "Палачинка", en: "Pancake", bg: "Палачинка" },
     category: "Десерти",
@@ -554,6 +794,7 @@ const state = {
   category: "all",
   query: "",
   cart: loadCart(),
+  ingredientsOpen: {},
   toast: "",
   languagePanelOpen: false,
   searchOpen: false
@@ -562,13 +803,22 @@ const state = {
 const app = document.querySelector("#app");
 let toastTimer = null;
 
-function product({ id, name, names = {}, category, price, image, description = "", descriptions = {} }) {
+function product({ id, name, names = {}, category, price, image, description = "", descriptions = {}, ingredients = "", section = "", keywords = "" }) {
   const categoryMeta = categoryFor(category);
   const translatedNames = Object.fromEntries(
     languages.map((lang) => [lang, localizedField(name, names, lang, id)])
   );
   const translatedDescriptions = Object.fromEntries(
     languages.map((lang) => [lang, localizedField(description, descriptions, lang, "")])
+  );
+  const translatedIngredients = Object.fromEntries(
+    languages.map((lang) => [lang, localizedField(ingredients, {}, lang, "")])
+  );
+  const translatedSections = Object.fromEntries(
+    languages.map((lang) => [lang, localizedField(section, {}, lang, "")])
+  );
+  const translatedKeywords = Object.fromEntries(
+    languages.map((lang) => [lang, localizedField(keywords, {}, lang, "")])
   );
 
   return {
@@ -579,12 +829,18 @@ function product({ id, name, names = {}, category, price, image, description = "
     image,
     name: translatedNames,
     description: translatedDescriptions,
+    ingredients: translatedIngredients,
+    section: translatedSections,
+    keywords: translatedKeywords,
     translations: Object.fromEntries(
       languages.map((lang) => [
         lang,
         {
           name: translatedNames[lang],
-          description: translatedDescriptions[lang]
+          description: translatedDescriptions[lang],
+          ingredients: translatedIngredients[lang],
+          section: translatedSections[lang],
+          keywords: translatedKeywords[lang]
         }
       ])
     )
@@ -619,6 +875,18 @@ function getProductName(product, lang = getCurrentLanguage()) {
 
 function getProductDescription(product, lang = getCurrentLanguage()) {
   return getLocalizedValue(product?.description, lang) || getLocalizedValue(product?.translations?.[lang]?.description, lang);
+}
+
+function getProductIngredients(product, lang = getCurrentLanguage()) {
+  return getLocalizedValue(product?.ingredients, lang) || getLocalizedValue(product?.translations?.[lang]?.ingredients, lang);
+}
+
+function getProductSection(product, lang = getCurrentLanguage()) {
+  return getLocalizedValue(product?.section, lang) || getLocalizedValue(product?.translations?.[lang]?.section, lang);
+}
+
+function getProductKeywords(product, lang = getCurrentLanguage()) {
+  return getLocalizedValue(product?.keywords, lang) || getLocalizedValue(product?.translations?.[lang]?.keywords, lang);
 }
 
 function getCategoryName(category, lang = getCurrentLanguage()) {
@@ -684,6 +952,8 @@ function escapeHtml(value = "") {
 function normalizeText(text = "") {
   return text
     .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .split("")
     .map((char) => cyrillicToLatinMap[char] || char)
@@ -714,7 +984,7 @@ function searchableProductText(item) {
   const searchableParts = [
     item.category,
     ...(category ? languages.map((lang) => getCategoryName(category, lang)) : []),
-    ...languages.flatMap((lang) => [getProductName(item, lang), getProductDescription(item, lang)])
+    ...languages.flatMap((lang) => [getProductName(item, lang), getProductDescription(item, lang), getProductIngredients(item, lang), getProductSection(item, lang), getProductKeywords(item, lang)])
   ];
   return searchableParts.flatMap(searchVariants).join(" ");
 }
@@ -860,6 +1130,27 @@ function setCategory(category) {
   window.requestAnimationFrame(() => {
     document.querySelector("#menuSections")?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
+}
+
+function toggleIngredients(id, trigger) {
+  state.ingredientsOpen[id] = !state.ingredientsOpen[id];
+  const isOpen = Boolean(state.ingredientsOpen[id]);
+  const card = trigger?.closest(".product-card");
+  const button = card?.querySelector(".ingredients-toggle");
+  const text = button?.querySelector(".ingredients-toggle-text");
+  const arrow = button?.querySelector(".ingredients-toggle-arrow");
+  const panel = card?.querySelector(".ingredients-panel");
+
+  if (!button || !panel || !text || !arrow) {
+    render();
+    return;
+  }
+
+  button.setAttribute("aria-expanded", String(isOpen));
+  text.textContent = t(isOpen ? "hideIngredients" : "viewIngredients");
+  arrow.textContent = isOpen ? "▴" : "▾";
+  panel.classList.toggle("open", isOpen);
+  panel.setAttribute("aria-hidden", String(!isOpen));
 }
 
 function render(options = {}) {
@@ -1091,12 +1382,13 @@ function renderProductCard(item) {
   const productDescription = getProductDescription(item).trim();
   const qty = state.cart[item.id]?.qty || 0;
   return `
-    <article class="product-card">
+    <article class="product-card" data-product-id="${escapeHtml(item.id)}">
       ${renderProductCardImage(item)}
       <div class="product-content">
         <div>
           <h3 class="product-title">${escapeHtml(productName)}</h3>
           ${productDescription ? `<p class="product-description">${escapeHtml(productDescription)}</p>` : ""}
+          ${renderProductIngredients(item)}
         </div>
         <div class="product-footer">
           <span class="product-price">${formatPrice(item.price)}</span>
@@ -1104,6 +1396,28 @@ function renderProductCard(item) {
         </div>
       </div>
     </article>
+  `;
+}
+
+function renderProductIngredients(item) {
+  const ingredients = getProductIngredients(item).trim();
+  if (!ingredients) return "";
+
+  const isOpen = Boolean(state.ingredientsOpen[item.id]);
+  const panelId = `ingredients-${item.id}`;
+
+  return `
+    <div class="ingredients-accordion">
+      <button class="ingredients-toggle" data-action="ingredients" data-id="${escapeHtml(item.id)}" type="button" aria-expanded="${isOpen}" aria-controls="${escapeHtml(panelId)}">
+        <span class="ingredients-toggle-text">${t(isOpen ? "hideIngredients" : "viewIngredients")}</span>
+        <span class="ingredients-toggle-arrow" aria-hidden="true">${isOpen ? "▴" : "▾"}</span>
+      </button>
+      <div class="ingredients-panel ${isOpen ? "open" : ""}" id="${escapeHtml(panelId)}" aria-hidden="${!isOpen}">
+        <div class="ingredients-panel-inner">
+          <p class="ingredients-text">${escapeHtml(ingredients)}</p>
+        </div>
+      </div>
+    </div>
   `;
 }
 
@@ -1439,6 +1753,7 @@ app.addEventListener("click", (event) => {
   if (action === "language-menu") toggleLanguagePanel();
   if (action === "search-open") openSearch();
   if (action === "search-close") closeSearch();
+  if (action === "ingredients") toggleIngredients(id, target);
   if (action === "lang") setLanguage(lang);
 });
 
