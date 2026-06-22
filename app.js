@@ -311,21 +311,21 @@ const menuProducts = [
     name: { mk: "Тост со кашкавал", en: "Cheese Toast", bg: "Тост с кашкавал" },
     category: "Сендвичи и тортиљи",
     price: 90,
-    image: PLACEHOLDER_IMAGE_SRC
+    image: "/optimized/menu-images/tost-so-kaskaval.webp"
   },
   {
     id: "tost-sunka",
     name: { mk: "Тост шунка", en: "Ham Toast", bg: "Тост с шунка" },
     category: "Сендвичи и тортиљи",
     price: 90,
-    image: PLACEHOLDER_IMAGE_SRC
+    image: "/optimized/menu-images/tost-so-sunka.webp"
   },
   {
     id: "tost-sunka-i-kaskaval",
     name: { mk: "Тост шунка и кашкавал", en: "Ham and Cheese Toast", bg: "Тост с шунка и кашкавал" },
     category: "Сендвичи и тортиљи",
     price: 100,
-    image: PLACEHOLDER_IMAGE_SRC
+    image: "/optimized/menu-images/tost-so-sunka-i-kaskaval.webp"
   },
   {
     id: "tost-vrat",
